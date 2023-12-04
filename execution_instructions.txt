@@ -1,0 +1,21 @@
+
+conda create -n myenv python=3.9
+
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cudatoolkit=11.6 -c pytorch -c nvidia
+
+pip install accelerate
+
+pip install deepspeed
+
+pip install datasets
+
+pip install transformers
+
+pip install peft
+
+accelerate config #Answer the questions in the prompt
+
+sbatch job.sh
+
+
+
